@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="73">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<InputField name="ОперационнаяСистема" id="25">
+					<DataPath>Объект.ОперационнаяСистема</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Windows</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Виндовс</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Linux</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Линукс</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ОперационнаяСистемаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ОперационнаяСистемаРасширеннаяПодсказка" id="27"/>
+					<Events>
+						<Event name="OnChange">ОперационнаяСистемаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация1" id="46">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация1КонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="Информация1РасширеннаяПодсказка" id="48"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись1" id="75">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операционная система на веб-сервере</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись1КонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="Надпись1РасширеннаяПодсказка" id="77"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="78">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<InputField name="Публикация" id="13">
+					<DataPath>Объект.Публикация</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Публикация</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Публикация</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удаление</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Удаление</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПубликацияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПубликацияРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">ПубликацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация2" id="83">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация2КонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="Информация2РасширеннаяПодсказка" id="85"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись2" id="86">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид запуска утилиты: публикация или удаление</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись2КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="Надпись2РасширеннаяПодсказка" id="88"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="89">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="90"/>
+			<ChildItems>
+				<InputField name="ВидВебСервера" id="1">
+					<DataPath>Объект.ВидВебСервера</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>true</DropListButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>MS IIS</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ИИС</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>apache 2.0</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Апач20</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>apache 2.2</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Апач22</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>apache 2.4</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Апач24</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВидВебСервераКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ВидВебСервераРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ВидВебСервераПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация3" id="94">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация3КонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="Информация3РасширеннаяПодсказка" id="96"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись3" id="97">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список поддерживаемых веб-серверов</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись3КонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="Надпись3РасширеннаяПодсказка" id="99"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="155">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="156"/>
+			<ChildItems>
+				<InputField name="ФайлКонфигурацииВебСервера" id="31">
+					<DataPath>Объект.ФайлКонфигурацииВебСервера</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ФайлКонфигурацииВебСервераКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ФайлКонфигурацииВебСервераРасширеннаяПодсказка" id="33"/>
+					<Events>
+						<Event name="OnChange">ФайлКонфигурацииВебСервераПриИзменении</Event>
+						<Event name="StartChoice">ФайлКонфигурацииВебСервераНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация4" id="160">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация4КонтекстноеМеню" id="161"/>
+					<ExtendedTooltip name="Информация4РасширеннаяПодсказка" id="162"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись4" id="163">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к файлу конфигурации веб-сервера Apache httpd.conf или apache.conf</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись4КонтекстноеМеню" id="164"/>
+					<ExtendedTooltip name="Надпись4РасширеннаяПодсказка" id="165"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="133">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="134"/>
+			<ChildItems>
+				<InputField name="ВидБазы" id="22">
+					<DataPath>Объект.ВидБазы</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Клиент-серверная</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">КлиентСервер</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Файловая</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Файл</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВидБазыКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ВидБазыРасширеннаяПодсказка" id="24"/>
+					<Events>
+						<Event name="OnChange">ВидБазыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация5" id="138">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация5КонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="Информация5РасширеннаяПодсказка" id="140"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись5" id="141">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент-серверный или файловый вариант</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись5КонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="Надпись5РасширеннаяПодсказка" id="143"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа6" id="144">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="145"/>
+			<ChildItems>
+				<InputField name="ИмяСервера" id="4">
+					<DataPath>Объект.ИмяСервера</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя сервера</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>false</ChoiceButton>
+					<ContextMenu name="ИмяСервераКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИмяСервераРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ИмяСервераПриИзменении</Event>
+						<Event name="StartChoice">ИмяСервераНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация6" id="149">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация6КонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="Информация6РасширеннаяПодсказка" id="151"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись6" id="152">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя сервера 1С или полный путь к файловой базе</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись6КонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="Надпись6РасширеннаяПодсказка" id="154"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа7" id="100">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="101"/>
+			<ChildItems>
+				<InputField name="ИмяБазы" id="7">
+					<DataPath>Объект.ИмяБазы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИмяБазыКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИмяБазыРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ИмяБазыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация7" id="105">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация7КонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="Информация7РасширеннаяПодсказка" id="107"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись7" id="108">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название базы в кластере или имя каталога</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись7КонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="Надпись7РасширеннаяПодсказка" id="110"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа8" id="111">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="112"/>
+			<ChildItems>
+				<InputField name="ИмяПубликации" id="19">
+					<DataPath>Объект.ИмяПубликации</DataPath>
+					<ContextMenu name="ИмяПубликацииКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ИмяПубликацииРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ИмяПубликацииПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация8" id="116">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация8КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="Информация8РасширеннаяПодсказка" id="118"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись8" id="119">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя, по которому будет обращение к опубликованной базе</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись8КонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="Надпись8РасширеннаяПодсказка" id="121"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа9" id="122">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="123"/>
+			<ChildItems>
+				<InputField name="КаталогПубликации" id="28">
+					<DataPath>Объект.КаталогПубликации</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="КаталогПубликацииКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КаталогПубликацииРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">КаталогПубликацииПриИзменении</Event>
+						<Event name="StartChoice">КаталогПубликацииНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация9" id="127">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация9КонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="Информация9РасширеннаяПодсказка" id="129"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись9" id="130">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к каталогу публикации на веб-сервере</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись9КонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="Надпись9РасширеннаяПодсказка" id="132"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа10" id="166">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="167"/>
+			<ChildItems>
+				<CheckBoxField name="УказатьФайлШаблона" id="34">
+					<DataPath>Объект.УказатьФайлШаблона</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УказатьФайлШаблонаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="УказатьФайлШаблонаРасширеннаяПодсказка" id="36"/>
+					<Events>
+						<Event name="OnChange">УказатьФайлШаблонаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<PictureDecoration name="Информация10" id="171">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация10КонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="Информация10РасширеннаяПодсказка" id="173"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись10" id="174">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется ли шаблон default.vrd для публикации веб-сервисов, odata и проч.</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись10КонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="Надпись10РасширеннаяПодсказка" id="176"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа11" id="177">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="178"/>
+			<ChildItems>
+				<InputField name="ПутьКФайлуШаблона" id="37">
+					<DataPath>Объект.ПутьКФайлуШаблона</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКФайлуШаблонаКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПутьКФайлуШаблонаРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">ПутьКФайлуШаблонаПриИзменении</Event>
+						<Event name="StartChoice">ПутьКФайлуШаблонаНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Информация11" id="182">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация11КонтекстноеМеню" id="183"/>
+					<ExtendedTooltip name="Информация11РасширеннаяПодсказка" id="184"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись11" id="185">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к файлу шаблона. Должен быть доступен утилите webinst.</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись11КонтекстноеМеню" id="186"/>
+					<ExtendedTooltip name="Надпись11РасширеннаяПодсказка" id="187"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа12" id="188">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="189"/>
+			<ChildItems>
+				<CheckBoxField name="АутентификацияОС" id="16">
+					<DataPath>Объект.АутентификацияОС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АутентификацияОСКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="АутентификацияОСРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">АутентификацияОСПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<PictureDecoration name="Информация12" id="193">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Информация12КонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="Информация12РасширеннаяПодсказка" id="195"/>
+				</PictureDecoration>
+				<LabelDecoration name="Надпись12" id="196">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опубликовать с доменной аутентификацией. Доступно только для IIS.</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="Надпись12КонтекстноеМеню" id="197"/>
+					<ExtendedTooltip name="Надпись12РасширеннаяПодсказка" id="198"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Результат" id="10">
+			<DataPath>fast8Результат</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>webinst</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Top</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<BackColor>web:MediumGreen</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="РезультатКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="12"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.FAST8ПодготовкаWebinst</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="fast8Результат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="fast8ЭтоУдаление" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это удаление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="fast8ЭтоИИС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это ИИС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="fast8ЭтоВиндовс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это виндовс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="fast8ЭтоКлиентСервер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это клиент сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="fast8Разделитель" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Fast8 разделитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
